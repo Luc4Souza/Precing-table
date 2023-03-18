@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+}
+    
+.header{ 
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 450px;
+    color: #f9fbfc;
+    background-color: #1d539e;
+}
+
+.header h1{
+    padding-top: 125px;
+    font-size: 60px;
+}
+
+.header p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #f9fbfc;
+}
+
+.card-box{
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    height: 400px;
+    justify-content: center;  
+}
+.box-two{
+    position: relative;
+    text-align: left;
+    top: -85px;
+    margin: 30px;
+    width: 450px;
+    height: 530PX;
+    border: 1px solid #8287991a;
+    border-radius: 10px;
+    color: black;
+    background-color: #f9fbfc;
+}
+.box-one,
+.box-three{
+    position: relative;
+
+    text-align: left;
+    top: -75px;
+    margin: 30px;
+    width: 450px;
+    height: 500PX;
+
+    border-radius: 10px;
+    color: black;
+    background-color: #f9fbfc;
+}
+.box-one:hover,
+.box-two:hover,
+.box-three:hover{
+    top: -100px;
+}
+
+.box-one,
+.box-three{
+    border: 1px solid #8287991a;
+}
+
+.box-one h3,
+.box-three h3{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.box-two > .yellow{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    background-color: #ffcc29;
+}
+
+.yellow h3{
+    color: #1d539e;
+}
+.yellow a{
+    color: #f9fbfc;
+    text-decoration: none;
+    background-color: #1d539e;
+    height: 25px;
+    width: 90px;
+    border-radius: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+.yellow a:hover{
+    position: relative;
+    
+    transition: 1s;
+    padding-top: 10px;
+    background-color: #144fa1;
+    width: 95px;
+}
+.yellow h3,a{
+    margin: 30px;
+    cursor: pointer;
+}
+
+/*estelizando o price*/
+.box-one .price,
+.box-three .price{
+    margin-top: 50px;
+}
+.price{
+    display: flex;
+    margin: 30px;
+}
+.price h2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
+.price span{
+    margin-left: -5px;
+    font-size: 20px;
+}
+.price p{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #828799;
+}
+
+/*estilizando o texto*/
+.text p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #828799;
+}
+.text::after {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #82879980;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    align-items: center;
+    width: 90%;
+}
+
+/* estilizando as tabelas*/
+.checked{
+    margin-top: 15px;
+    margin-left: 30px;
+    color: #828799;
+}
+.checked li{
+    display: flex;
+    margin-bottom: 25px;
+}
+.checked p{
+    
+    margin-top: 0;
+    color: #828799; 
+    margin-left: 10px;  
+}
+
+/*estilizando o botão*/
+
+.button button{
+    
+    background-color: #f9fbfc;
+    border: 2px solid #144fa1;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #144fa1;
+    transition: 0.8s;
+}
+.button a{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #144fa1;
+}
+.button a:hover{
+    color: #f9fbfc;
+}
+
+.box-one .button{
+    margin-top: 115px;
+}
+
+.box-two .button{
+    margin-top: 78px;
+}
+
+
+@media (max-width: 1500px){
+    .button button{
+        width: 300px;
+        height: 40px;
+    } 
+}
+@media (max-width: 1300px){
+    .button button{
+        width: 250px;
+        height: 40px;
+    } 
+}
+@media (max-width: 1150px){
+    .button button{
+        width: 75%;
+        margin-bottom: 20px;
+        height: 40px;
+    } 
+    .header{
+        flex-direction: column;
+    }
+    .card-box{
+        flex-direction: column;
+        justify-content: start;
+    }
+    
+    .box-one,
+    .box-three{
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .box-two{
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+    
